@@ -526,7 +526,7 @@ function Library:CreateWindow(title, color)
                         bindtext.Text = "[ ... ]"
                     end)
 
-                    game.RunService.Heartbeat:Connect(function()
+                    game:GetService("RunService").Heartbeat:Connect(function()
                         if (WaitingForBind == false) then
                             if (Clicked == true) then
                                 WaitingForBind = true
